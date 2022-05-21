@@ -2,7 +2,7 @@ import './NavBar.css';
 
 import React, { useState } from "react";
 
-
+import Logo from './UH.png';
  
 
 
@@ -14,7 +14,9 @@ const Navbar= ()=> {
     return (
       <div>
       <nav>
-        <div className="logo">Urban Heritage</div>
+        <div className="logo">
+            <img src={Logo} alt="logo" width="250" height="100"/>
+           </div>
         <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
           <li>
             <a>Projects</a>
@@ -29,7 +31,7 @@ const Navbar= ()=> {
             <a>Blog</a>
           </li>
           <li>
-            <a>Connect Your Wallet</a>
+          <button type="button" className="btn btn-primary">Connect Your Wallet</button>
           </li>
         </ul>
         <i className="fas fa-bars burger" onClick={() => setOpen(!open)}></i>
