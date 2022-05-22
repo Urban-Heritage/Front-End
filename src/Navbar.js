@@ -2,7 +2,7 @@ import './NavBar.css';
 
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import Wallet from "./Wallet";
 import Logo from './UH.png';
  
 
@@ -38,8 +38,8 @@ const Navbar= ()=> {
           </li>
 
           <li>
-          <button type="button" className="btn btn-primary">
-              <b> Connect Your Wallet</b></button>
+              <Wallet/>
+        
           </li>
         </ul>
         <i className="fas fa-bars burger" onClick={() => setOpen(!open)}></i>

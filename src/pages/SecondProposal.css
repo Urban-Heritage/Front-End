@@ -1,0 +1,11 @@
+.SecondProposal{
+    padding: 10px; 
+    border: 2px solid white;
+    color: white;
+    font-size: large;
+}
+
+.SecondProposal text{
+    font-size: small;
+    color: tomato;
+}

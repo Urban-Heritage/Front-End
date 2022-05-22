@@ -1,0 +1,15 @@
+.Proposal{
+    padding: 10px; 
+    border: 1px solid white;
+    color: white;
+    font-size: large;
+}
+
+.Proposal text{
+    font-size: small;
+    color: tomato;
+}
+.headerproposal{
+    color: white;
+}
+

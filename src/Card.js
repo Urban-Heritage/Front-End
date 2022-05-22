@@ -38,7 +38,7 @@ const Card = (props) => {
           </b> </p> 
           </Col> 
           </Row>
-        <a href="#" className="btn btn-outline-success">
+        <a href="#" className="btn btn-primary">
           Join
         </a>
       </div>

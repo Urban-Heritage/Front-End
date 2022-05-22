@@ -1,19 +1,56 @@
 import React from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./Footer.css";
 import Logo from './UH.png';
-import Socialmedia from './socialmedia.jpg'
+
+import {
+    Container,
+    Row,Col,
+  } from "react-bootstrap";
 
 const Footer = () => {
-  return (
-    <div><img src={Logo} alt="logo" className="logo" />
-    <div><img src={Socialmedia} className="socialmedia" /></div>
-    
-    
-    
-    
+
+return(
+    <div>
+    <footer>
+        <Container>
+        <Row>
+            <Col className="text-center">
+          
+            <img src={Logo} alt="logo" width="250" height="100"/>
+
+          
+            </Col>
+            </Row>
+<Row>
+<Col className="p-3">
+
+					<a href="#" >
+                                <i className="fab fa-twitter twitter"></i>
+                                    </a>											
+								<a href="#"> 
+                                <i className="fab fa-telegram telegram"></i>
+
+                                </a>
+								<a href="#"> 
+                                <i className="fab fa-github github"></i>
+
+                                </a>
+</Col>
+</Row>
+
+<Row>
+            <Col className="text-center text-white">
+          
+<p> 	<a href="#" >Terms of Service </a>| 	<a href="#" >Privacy Policy </a>| <a href="#" >Guidelines</a></p>
+<p>Copyright © 2022 Urban Heritage. All rights reserved.</p>
+          
+            </Col>
+            </Row>
+            </Container>
+
+            </footer>
+
     </div>
-  )
+);
 }
 
- export  default Footer;
+export default Footer
