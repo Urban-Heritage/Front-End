@@ -1,16 +1,23 @@
+.btn-primary{
 
+    background-color: #5E40D5 !important;
+    border-color: #5E40D5 !important;
+    
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+
 li {
     list-style-type: none;
   }
   
   a {
     text-decoration: none;
+    padding-right: 3px;
+    padding-left: 3px;
   }
 nav {
     display: flex;
@@ -20,6 +27,8 @@ nav {
     font-family: sans-serif;
     background-color: black;
     color: white;
+    padding-right: 1px;
+    padding-left: 1px;
   }
   
   nav .logo {
@@ -34,8 +43,9 @@ nav {
     width: 35%;
   }
   
+ 
   nav .nav-links a {
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
   }
   
