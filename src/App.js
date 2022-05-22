@@ -3,6 +3,8 @@ import './App.css';
 import NavBar  from './Navbar';
 import Header  from './Header';
 import DaoCards  from './DaoCards';
+import Footer from './Footer'
+import Proposal from './Proposal';
 
 const App= ()=> {
   return (
@@ -11,7 +13,9 @@ const App= ()=> {
           <NavBar />  
           <Header className="App-header"/>  
           <DaoCards />
-     
+          <Proposal/>
+          <Footer/>
+         
     
     </div>
   );
