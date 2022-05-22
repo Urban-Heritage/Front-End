@@ -62,9 +62,13 @@ const WalletCard = () => {
 
 
 	// listen for account changes
-	window.ethereum.on('accountsChanged', accountChangedHandler);
+	if (window.ethereum.on('accountsChanged', accountChangedHandler)) {
+        console.log('Account changed');
+    }
 
-	window.ethereum.on('chainChanged', chainChangedHandler);
+	if(window.ethereum.on('chainChanged', chainChangedHandler)) {
+        console.log('Chain changed');
+    }
 	
 	return (
 <div>
