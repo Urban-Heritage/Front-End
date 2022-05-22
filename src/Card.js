@@ -7,11 +7,11 @@ import {
 const Card = (props) => {
 
     const { 
-        CardImage ='',
-        Title='',
-        Des='',
-        Members='',
-        MRR='',
+        Image="",
+        Title ="",
+        Des="",
+        MRR="",
+        Members="",
 } = props;
 
   return (
@@ -19,21 +19,22 @@ const Card = (props) => {
       <div className="overflow">
         <img
           className="card-img-top"
-          src="https://pyxis.nymag.com/v1/imgs/bd5/d6b/db5a43a797e837d31533c32acc8c582526-miami-bull.2x.rsocial.w600.jpg"
+          src={Image}
+          width="200px"
+          height="200px"
           alt="pink pineapple"
         />
       </div>
       <div className="card-body text-white">
-        <h4 className="card-title">Miami Bull</h4>
+        <h4 className="card-title">{Title}</h4>
         <p className="card-text text-white">
-        This masterfully crafted sculpture is a futuristic symbol of modern finance and is a precious statue that was inspired by the City of Miami.
-        </p>
+{Des}        </p>
         <Row><Col><p><b>
-          4M Members <i className="fas fa-users users m-1" ></i>
+          {Members} <i className="fas fa-users users m-1" ></i>
           </b> </p> </Col> 
           <Col>
           <p><b>
-        $1M  MRR <i className="fas fa-coins coins m-2" ></i>
+          {MRR} <i className="fas fa-coins coins m-2" ></i>
           </b> </p> 
           </Col> 
           </Row>
