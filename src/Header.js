@@ -1,7 +1,8 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
-
+import "./YoutubeEmbed.css";
+import YoutubeEmbed from "./YoutubeEmbed";
 import {
     Button,
     Container,
@@ -31,7 +32,7 @@ Support the local cultural heritage of Miami-Dade County and obtain benefits.
               </Button>
             </p>
     </Col>
-    <Col>Video</Col>
+    <Col> <YoutubeEmbed embedId="QNZto3SP3q8" /></Col>
   </Row>
        
           </Container>
